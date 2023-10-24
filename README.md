@@ -11,12 +11,12 @@ Steps taken:
 Steps taken:  
 1)The data was split into training and test sets with a 80-20 split. The features were scaled using StandardScaler.  
 2)Hyperparameter tuning done on KNearestRegressor:  
-   .A loop is used to test different numbers of neighbors (from 1 to 199) to find the optimal number for      the KNN regression model.  
-   .For each number of neighbors, the KNN model is trained, and RMSE (Root Mean Squared Error) and R-         squared (R^2) scores are calculated on the test set.  
-   .17 Neighbours gave minimum RMSE  
-   .Another loop tests different values of the power parameter (p) for the KNN model (from 1 to 4). This      helps identify the optimal value for the Minkowski distance metric used in KNN.  
-   .Similar to the previous step, RMSE and R^2 scores are calculated for each value of p, and plots are       generated.  
-   .p=1 gave minimum RMSE  
+   *A loop is used to test different numbers of neighbors (from 1 to 199) to find the optimal number for      the KNN regression model.  
+   *For each number of neighbors, the KNN model is trained, and RMSE (Root Mean Squared Error) and R-         squared (R^2) scores are calculated on the test set.  
+   *17 Neighbours gave minimum RMSE  
+   *Another loop tests different values of the power parameter (p) for the KNN model (from 1 to 4). This      helps identify the optimal value for the Minkowski distance metric used in KNN.  
+   *Similar to the previous step, RMSE and R^2 scores are calculated for each value of p, and plots are       generated.  
+   *p=1 gave minimum RMSE  
   
 The final model used KNeighborsRegressor with n_neighbors=17 and p=1.  
 The final RMSE on test set was 38.84. The final R^2 on test set was 0.56.  
