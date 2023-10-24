@@ -11,6 +11,7 @@ Steps taken:
 
 # Model Building
 Steps taken:
+
 1)The data was split into training and test sets with a 80-20 split. The features were scaled using StandardScaler.
 
 2)Hyperparameter tuning done on KNearestRegressor:
